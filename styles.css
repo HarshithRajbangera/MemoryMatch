@@ -47,6 +47,11 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 150px);
         grid-gap: 10px;
+        
+    }
+    body{ 
+        padding-top: 20px;
+        padding-bottom:20px;
     }
     
 }
