@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     background:linear-gradient(yellow,rgb(15, 159, 15),rgb(239, 62, 62));
 }
@@ -43,14 +43,27 @@ body {
     color:green;
 }
 @media (max-width:600px){
-    .game-container {
-        display: grid;
-        grid-template-columns: repeat(2, 150px);
-        grid-gap: 10px;
-        
-    }
-    body{ 
-       height:100vh;
-    }
+
     
+    .game-container {
+        grid-template-columns: repeat(2, 1fr); 
+        width: 90%;
+        justify-content: center;
+        align-items: center; 
+        gap:5px;
+    }
+
+    .card {
+        width: 120px; 
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .header {
+        font-size: 16px;
+        width:90vw;
+    }
+
 }
